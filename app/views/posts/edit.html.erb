@@ -1,4 +1,4 @@
-<%= form_for @post do |t| %>
+<%= form_tag post_path(@post), method: "put" do |t| %>
 <label>Post title:</label><br>
 <%= text_field_tag :title, @post.title %><br>
 
